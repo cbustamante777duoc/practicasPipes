@@ -7,11 +7,15 @@ import { MaterialModule } from './material.module';
 
 import localES from '@angular/common/locales/es';
 import { registerLocaleData } from '@angular/common';
+import { TituloPipe } from './pipes/titulo.pipe';
+import { PsSuspensivoPipe } from './pipes/ps-suspensivo.pipe';
 registerLocaleData(localES,'es');
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    TituloPipe,
+    PsSuspensivoPipe
   ],
   imports: [
     BrowserModule,
